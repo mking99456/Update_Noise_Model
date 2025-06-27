@@ -5,5 +5,5 @@
 5. Make sure WireCell has the correct noise model and correct simulation parameters. In particular, after you have built/compiled dunereco, copy the following files to the following places:
     a. iceberg_group_to_channel_map_incoh.json.bz2, iceberg_noise_model_incoh.json.bz2, iceberg-wires-larsoft-v2.json.bz2 to $WIRECELL_PATH (for me, it's $PATH_WHERE_I_INSTALLED_DUNESW/dunesw_v09_90_00d00/software/localProducts_dunesw_v09_90_00d00_e26_prof/dunereco/v09_90_00d00/wire-cell-cfg)
     b. Copy params.jsonnet (contains correct gain, resolution, shaping time) to $WIRECELL_PATH/pgrapher/experiment/iceberg or $PATH_WHERE_I_INSTALLED_DUNESW/dunesw_v09_90_00d00/software/localProducts_dunesw_v09_90_00d00_e26_prof/dunereco/v09_90_00d00/wire-cell-cfg/pgrapher/experiment/iceberg
-Use icegen_ar39.fcl to simulate your ICEBERG noise + Ar39!
+6. Use icegen_ar39.fcl to simulate your ICEBERG noise + Ar39!
     a. Note that my current local version of the decay0 fcl involves me modifying the nominal Ar39 rate to be 100x that in nature... If you want to use normal radiological values, you can use dune_radiological_model_decay0.fcl, which is automatically on the FHICL_FILE_PATH when you install dunesw.
